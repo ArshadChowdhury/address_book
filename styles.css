@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.container {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create-new-btn {
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  background-color: green;
+  border-radius: 8px;
+  color: white;
+}
+
+#searchText {
+  border: none;
+  font-size: 20px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+}
+
+#searchText:focus {
+  outline-width: 0;
+}
+
+.delete-contact:after {
+  display: inline;
+  content: "\00d7";
+  color: white;
+}
+
+.hidden-form {
+  display: none;
+  background-color: grey;
+  height: 440px;
+  width: 400px;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px;
+  color: white;
+}
+
+.hidden-form-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hidden-form-add input {
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 17px;
+  width: 350px;
+}
+
+.add-btn {
+  margin-top: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.header {
+  margin: 20px;
+  list-style: none;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  margin: 2rem;
+}
+
+.card {
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: azure;
+  padding: 20px;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  padding-bottom: 10px;
+}
+
+.hides-card {
+  display: none;
+}
+
+.delete-contact {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  right: 20px;
+  top: 15px;
+  cursor: pointer;
+  border: none;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Address Book App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Address Book</h1>
+      <button class="create-new-btn">+ Add New Contact</button>
+      <div class="hidden-form">
+        <div class="hidden-form-add">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+          <label for="surname">Surname</label>
+          <input id="surname" type="text" />
+          <label for="number">Phone Number</label>
+          <input id="number" type="number" />
+          <label for="address">Address</label>
+          <input id="address" type="text" />
+          <button class="add-btn">Add Contact</button>
+        </div>
+      </div>
+    </div>
+
+    <input type="search" id="searchText" placeholder="Search Names Here" />
+
+    <div class="contact-cards"></div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</html>
